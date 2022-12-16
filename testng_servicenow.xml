@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ServiceNow" verbose="2">
+  <test thread-count="2" name="Incidents">
+  <parameter name="url" value="https://dev137086.service-now.com/navpage.do"></parameter>
+  <parameter name="user_name" value="admin"></parameter>
+  <parameter name="user_password" value="Service@123"></parameter>
+    <classes>  
+       <class name="week6.day1.CreateNewIncident"/>
+      <class name="week6.day1.UpdateExistingIncident"/>
+      <class name="week6.day1.AssignTheIncident"/>
+      <class name="week6.day1.DeleteTheIncident"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
